@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  /* background-color: #282c34 !important; */
+}
+
+.box {
+  box-shadow: 4px 4px 2px grey;
+}
+
+.sunBanner {
+  /* position: absolute; */
+  width: 100%;
+  background-color: black;
+  height: 20%;
+  display: inline-block;
+}
+
+.sunBanner img {
+  vertical-align: middle;
+  height: 100%;
+}
+
+.sunBanner p {
+  color: grey;
+  /* float: right; */
+  margin: 3px;
+  vertical-align: bottom;
+  display: inline-block;
+  right: 0%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
