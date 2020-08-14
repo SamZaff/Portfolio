@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .App-logo {
@@ -10,62 +10,137 @@
   pointer-events: none;
 }
 
-body {
+body, html {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Courier" !important;
   /* background-color: #282c34 !important; */
 }
 
 .box {
   box-shadow: 4px 4px 2px grey;
+  /* margin: 10px 15px 5px 25px; */
+  text-align: left;
 }
 
+
+
 .sunBanner {
-  /* position: absolute; */
-  width: 100%;
+  overflow: hidden;
   background-color: black;
-  height: 20%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 15%;
+  z-index: 1;
   display: inline-block;
 }
 
 .sunBanner img {
+  position: absolute;
+  transform: translateX(-50%);
   vertical-align: middle;
-  height: 100%;
+  height: 100%; 
 }
 
 .sunBanner p {
+  position: absolute;
   color: grey;
-  /* float: right; */
   margin: 3px;
-  vertical-align: bottom;
-  display: inline-block;
+  /* display: inline-block; */
   right: 0%;
+  bottom: 0%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sunBanner a {
+  float: left;
+  display: block;
   color: white;
+  padding: 20px 20px 0px 20px;
+  text-decoration: none !important;
+  font-size: x-large;
+  height: 100%;
+  transition: .2s;
 }
 
-.App-link {
-  color: #61dafb;
+.sunBanner a:hover {
+  color: black;
+  background-color: rgb(231, 172, 44);
+  transition: .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+  
+  width: 100%;
+  /* display: block; */
+  animation: fadein 1.5s;
+}
+
+ #me {
+  position: relative;
+  width: 50%;
+  height: 700px;
+  display: inline-block;
+  /* box-shadow: 4px 4px 2px grey; */
+  overflow-x: auto;
+}
+
+ #info {
+   overflow-x: auto;
+  position: relative;
+  width: 50%;
+  height: 700px;
+  
+  /* left: 50%; */
+  display: inline-block;
+  background-color: rgb(235, 232, 232);
+
+}
+
+#me img {
+  max-width: 65%;
+  max-height: 65%;
+  margin: 7%;
+  border-radius: 50%;
+}
+#me p {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+ul {
+  font-weight: bold;
+  padding-top: 8.33%;
+  font-size: xx-large;
+  text-align: left;
+  
+}
+
+li {
+  margin-bottom: 3%;
+  padding-left: 105px;
+  list-style: none;
+}
+
+#section1, #section2 {
+  display: block;
+  width: 100%; 
+}
+
+#section1 {
+  margin-top: 7.5%;
+  width: 100%; 
+}
+
+.page {
+  padding: 0px;
+  display: block;
+}
+
+@keyframes fadein{
+  from {opacity: 0%;}
+  to {opacity: 100%;}
 }
