@@ -24,12 +24,17 @@ function App() {
     <div className="App">
       <div className="sunBanner">
         <div id="nav">
-          <a href="#section1">About</a>
-          <a href="#section2">Experience</a>
-          <a href="#section3">Projects</a>
+          <a href="#jump1">About</a>
+          <a href="#jump2">Experience</a>
+          <a href="#jump3">Projects</a>
         </div>
         <img src={require(`./Resources/SunBanner.gif`)} alt="sun" />
         <p>GIF created using Blender</p>
+      </div>
+      <div className = "section-jumps">
+        <p id = "jump1"></p>
+        <p id = "jump2"></p>
+        <p id = "jump3"></p>
       </div>
       <div className="page" id="section1">
         <div id="me">

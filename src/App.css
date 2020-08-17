@@ -172,6 +172,17 @@ body, html {
   animation: fadein 1s;
 }
 
+.section-jumps {
+  top: 0%;
+  position: absolute;
+  /* display: none; */
+}
+
+.section-jumps p {
+  position: relative;
+  height: 87vh;
+}
+
 .page {
   display: block;
 }
