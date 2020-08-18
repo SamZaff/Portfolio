@@ -62,12 +62,14 @@ body, html {
   font-size: x-large;
   height: 100%;
   transition: .2s;
+  -webkit-transition: .2s;
 }
 
 .sunBanner a:hover {
   color: black;
   background-color: rgb(231, 172, 44);
   transition: .2s;
+  -webkit-transition: .2s;
 }
 
 .sunBanner #dropdown {
