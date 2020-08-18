@@ -5,21 +5,14 @@ import { FaGithub, FaPhoneAlt, FaLightbulb, FaShoePrints } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMail, GoDeviceDesktop } from 'react-icons/go'
 import { IoIosPaper } from 'react-icons/io'
-import { GiCardRandom, GiBookCover, GiThink, GiRingedPlanet } from 'react-icons/gi'
+import { GiCardRandom, GiBookCover, GiThink, GiRingedPlanet, GiStack } from 'react-icons/gi'
 import { MdWork } from 'react-icons/md'
 import resume from './Resources/Resume.pdf'
 
-// function getTimeOfDay() {
-//   var d = new Date();
-//   if (d.getHours() < 6 || d.getHours() > 19) {
-//     return 'Moon'
-//   }
-//   else {
-//     return 'Sun'
-//   }
-// }
-
 function App() {
+  const [pageNumber, changePageNumber] = React.useState(0);
+
+
   return (
     <div className="App">
       <div className="sunBanner">
@@ -31,10 +24,10 @@ function App() {
         <img src={require(`./Resources/SunBanner.gif`)} alt="sun" />
         <p>GIF created using Blender</p>
       </div>
-      <div className = "section-jumps">
-        <p id = "jump1"></p>
-        <p id = "jump2"></p>
-        <p id = "jump3"></p>
+      <div className="section-jumps">
+        <p id="jump1"></p>
+        <p id="jump2"></p>
+        <p id="jump3"></p>
       </div>
       <div className="page" id="section1">
         <div id="me">
@@ -51,7 +44,7 @@ function App() {
             <li><FaGithub /> <a href="https://github.com/SamZaff" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><AiFillLinkedin color="#0072b1" /> <a href="https://www.linkedin.com/in/sam-zaffanella-239190109/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><FaPhoneAlt color="#32CD32" /> (+1)925-451-0918</li>
-            <li><GoMail color="red" /> samuel.zaffanella@gmail.com</li>
+            <li><GoMail color="red" /> <a href="mailto:samuel.zaffanella@gmail.com">samuel.zaffanella@gmail.com</a></li>
             <li><IoIosPaper color="grey" /> <a href={resume} target="_blank" rel="noopener noreferrer">Resume.pdf</a></li>
             <li><GiCardRandom color="Purple" /> <a href="https://briscolacardgame.herokuapp.com/" target="_blank" rel="noopener noreferrer">Briscola Card Game</a></li>
           </ul>
@@ -136,36 +129,147 @@ function App() {
             It is important to work together on a shared goal (COME BACK TO THIS. I can't think of anything right now)
           </p>
           <h4>Hobbies</h4>
-          <ul style = {{listStyle: "none", marginLeft: "6%", paddingLeft: "0px"}}>
-            <li><FaShoePrints color = "brown"/> Hiking</li>
+          <ul style={{ listStyle: "none", marginLeft: "6%", paddingLeft: "0px" }}>
+            <li><FaShoePrints color="brown" /> Hiking</li>
             <li><GoDeviceDesktop /> Deconstructing older hardware</li>
-            <li><GiRingedPlanet color = "blue"/> Astronomy</li>
+            <li><GiRingedPlanet color="blue" /> Astronomy</li>
           </ul>
         </div>
       </div>
       <div className="page" id="section3">
-        <div id="me">
-          <img src={require(`./Resources/MeSquared2.JPG`)} alt="Me" />
-          <p>Hi there! My name is <b>Sam Zaffanella</b> and I am a recent computer
-             science graduate of San Francisco State University. I am currently
-             looking for work. I'm gonna come back and work on this description
-             later so all of what I'm writing right now is just a filler. Hopefully
-             I can think of something interesting to say.
-            </p>
+        <div id="pager-nav">
+          <button onClick={() => changePageNumber(pageNumber <= 0 ? 6 : pageNumber - 1)}> &laquo; </button>
+          {pageNumber + 1}/7
+        <button onClick={() => { changePageNumber(pageNumber >= 6 ? 0 : pageNumber + 1) }}> &raquo; </button>
         </div>
-        <div id="info">
-          <ul>
-            <li><FaGithub /> <a href="https://github.com/SamZaff" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><AiFillLinkedin color="#0072b1" /> <a href="https://www.linkedin.com/in/sam-zaffanella-239190109/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><FaPhoneAlt color="#32CD32" /> (+1)925-451-0918</li>
-            <li><GoMail color="red" /> samuel.zaffanella@gmail.com</li>
-            <li><IoIosPaper color="grey" /> <a href={resume} target="_blank" rel="noopener noreferrer">Resume.pdf</a></li>
-            <li><GiCardRandom color="Purple" /> <a href="https://briscolacardgame.herokuapp.com/" target="_blank" rel="noopener noreferrer">Briscola Card Game</a></li>
-          </ul>
+        <div className="project">
+          <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
+            <img src={require(`./Resources/Briscola.PNG`)} alt="Me" />
+            <h2><b>Briscola</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person.
+            </p>
+
+          </div>
+
+          <div style={{ display: pageNumber === 1 ? "block" : "none" }}>
+            <img src={require(`./Resources/Zephyr.PNG`)} alt="Me" />
+            <h2><b>Zephyr</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person. <b>CHANGE!</b>
+            </p>
+          </div>
+          <div style={{ display: pageNumber === 2 ? "block" : "none" }}>
+            <img src={require(`./Resources/Pacman.PNG`)} alt="Me" />
+            <h2><b>Pacman</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person. <b>CHANGE!</b>
+            </p>
+          </div>
+          <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
+            <img src={require(`./Resources/Bubble-Trouble.PNG`)} alt="Me" />
+            <h2><b>Bubble Trouble</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person. <b>CHANGE!</b>
+            </p>
+          </div>
+          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
+            <img src={require(`./Resources/Help.PNG`)} alt="Me" />
+            <h2><b>Help!</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person. <b>CHANGE!</b>
+            </p>
+          </div>
+          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
+            <img src={require(`./Resources/Tank-Game.PNG`)} alt="Me" />
+            <h2><b>Tank Game</b></h2>
+            <p>A popular, often competitively played, Italian card game
+            that consists of 2-4 players. The objective of the game is to score as
+            many points as possible, which is done through winning certain cards
+            that are worth varying amounts of points each. This was a project made
+            during Covid-19 to give my family a way to play one of our favorite card
+            games without having to be in person. <b>CHANGE!</b>
+            </p>
+          </div>
+          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
+            <img src={require(`./Resources/Mine-Sweeper.PNG`)} alt="Me" />
+            <h2><b>Mine Sweeper</b></h2>
+            <p>As the name implies, this is a recreation of the classic game 
+              "Mine Sweeper", with some extra controls to improve the playing 
+              experience. I was disappointed that windows 10 isn't packaged with
+              the game, so I made my own version!
+            </p>
+          </div>
+
+        </div>
+        <div className="project-cont">
+          <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Node.js, React.js, MongoDB, Express, Socket.IO</b></p>
+            <p><b>Position:</b> FullStack </p>
+            <p><b>Origin:</b> Personal(?)</p>
+            <p><b>Link:</b> <a href="https://briscolacardgame.herokuapp.com" target="_blank" rel="noopener noreferrer">https://briscolacardgame.herokuapp.com</a></p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Briscola</a></p>
+          
+          </div>
+          <div style={{ display: pageNumber === 1 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>??????</b></p>
+            <p><b>Position:</b> Frontend </p>
+            <p><b>Origin:</b> School Project</p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Zephyr(CHANGE LINK)</a></p>
+          </div>
+          <div style={{ display: pageNumber === 2 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Python</b></p>
+            <p><b>Position:</b> N/A </p>
+            <p><b>Origin:</b> School Project</p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Pacman(CHANGE LINK)</a></p>
+          </div>
+          <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Java</b></p>
+            <p><b>Position:</b> N/A </p>
+            <p><b>Origin:</b> Personal</p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Bubble-Trouble" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Bubble-Trouble</a></p>
+          </div>
+          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Node.js, React.js, MongoDB, Websocket, Express</b></p>
+            <p><b>Position:</b> Frontend </p>
+            <p><b>Origin:</b> School Project </p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Pacman(CHANGE LINK)</a></p>
+          </div>
+          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Java</b></p>
+            <p><b>Position:</b> N/A </p>
+            <p><b>Origin:</b> School Project </p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Tank-Game" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Tank-Game</a></p>
+          </div>
+          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Java</b></p>
+            <p><b>Position:</b> N/A </p>
+            <p><b>Origin:</b> Personal </p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Mine-Sweeper" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Mine-Sweeper</a></p>
+          </div>
         </div>
       </div>
     </div>
-
   );
 }
 
