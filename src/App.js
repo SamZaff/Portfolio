@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Card from 'react-bootstrap/Card'
 import { FaGithub, FaPhoneAlt, FaLightbulb, FaShoePrints } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMail, GoDeviceDesktop } from 'react-icons/go'
