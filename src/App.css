@@ -11,7 +11,7 @@ body, html {
   margin: 0;
   font-family: "Courier New" !important;
   /* font-family: "Verdana" !important; */
-  background-color: #f0d88c !important;
+  background-color: #f3d87e !important;
 }
 
 /*BANNER/NAVBAR*/
@@ -95,10 +95,6 @@ body, html {
   margin-bottom: 2%; 
   box-shadow: 0px 5px 5px grey;
   border-radius: 5px;
-  
-}
-
-#section1, #section2 {
   overflow: hidden;
 }
 
@@ -334,7 +330,7 @@ body, html {
     width: 100%;
     display: block;
   }
-  #me {
+  #section1 {
     margin-top: 12%;
   }
   #me, #info {
@@ -349,7 +345,7 @@ body, html {
     padding-left: 0%;
   }
   #section1, #section2, #section3 {
-    /* overflow: visible; */
+    
     height: auto !important;
   }
   #experience:last-child {

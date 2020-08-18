@@ -32,11 +32,12 @@ function App() {
       <div className="page" id="section1">
         <div id="me">
           <img src={require(`./Resources/MeSquared2.JPG`)} alt="Me" />
-          <p>Hi there! My name is <b>Sam Zaffanella</b> and I am a recent computer
-             science graduate of San Francisco State University. I am currently
-             looking for work. I'm gonna come back and work on this description
-             later so all of what I'm writing right now is just a filler. Hopefully
-             I can think of something interesting to say.
+          <p>Hi there! My name is <b><u>Sam Zaffanella</u></b> and I recently graguated 
+             from San Francisco State University with a bachelor of science degree 
+             in computer science. I am currently seeking full stack web development 
+             opportunities, centralized in the Bay Area or anywhere 
+             remotely. If you are looking for a great team player and a go getter attitude,  
+             <i>I am your guy.</i>
             </p>
         </div>
         <div id="info">
@@ -56,13 +57,14 @@ function App() {
           <h2><FaLightbulb color="#CCCC00" />Skills</h2>
           <h4>Programming</h4>
           <ul>
-            <li>Java</li>
             <li>JavaScript</li>
-            <li>C++</li>
             <li>React.js</li>
-            <li>HTML/CSS</li>
-            <li>Go</li>
             <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Go</li>
+            <li>Java</li>
+            <li>C++</li>
           </ul>
           <h4>Databases</h4>
           <ul>
@@ -106,13 +108,14 @@ function App() {
           <br />
           <img src={require('./Resources/NCAPDA.png')} id="ncapda" alt="ncapda.png" />
           <ul>
-            <li>Website Support Manager for upcoming <b>Dose of Action</b> event (postponed due to social distancing)</li>
+            <li><u>January 2020 - Present</u>: Website Support Manager for upcoming <b>Dose of Action</b> event (postponed due to Covid-19)</li>
+            <li>An art event coupled with raising awareness to prescription drug misuse and abuse</li>
           </ul>
           <br />
           <img src={require('./Resources/CVS.png')} id="CVS" alt="CVS.png" />
           <ul>
-            <li>May 2017 - August 2017: Retail Sales worker at CVS health</li>
-            <li><b>Maybe reformat?</b></li>
+            <li><u>May 2017 - August 2017</u>: Retail Sales worker at CVS health</li>
+            <li>Provided adept point of sales work for customers</li>
           </ul>
         </div>
         <div id="experience">
@@ -144,7 +147,7 @@ function App() {
         </div>
         <div className="project">
           <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
-            <img src={require(`./Resources/Briscola.PNG`)} alt="Me" />
+            <img src={require(`./Resources/Briscola.PNG`)} alt="Briscola.PNG" />
             <h2><b>Briscola</b></h2>
             <p>A popular, often competitively played, Italian card game
             that consists of 2-4 players. The objective of the game is to score as
@@ -157,58 +160,51 @@ function App() {
           </div>
 
           <div style={{ display: pageNumber === 1 ? "block" : "none" }}>
-            <img src={require(`./Resources/Zephyr.PNG`)} alt="Me" />
+            <img src={require(`./Resources/Zephyr.PNG`)} alt="Zephyr.PNG" />
             <h2><b>Zephyr</b></h2>
-            <p>A popular, often competitively played, Italian card game
-            that consists of 2-4 players. The objective of the game is to score as
-            many points as possible, which is done through winning certain cards
-            that are worth varying amounts of points each. This was a project made
-            during Covid-19 to give my family a way to play one of our favorite card
-            games without having to be in person. <b>CHANGE!</b>
+            <p>Zephyr is a pseudo-apartment rental website created as part of 
+              an all-semester long project for the Software Engineering website 
+              at SFSU. This project was meant to emulate a teamworking environment, with 
+              each student being assigned a position within a team. The site encorporates 
+              various components commonly used in already existing real-estate websites 
+              such as an account system, uploading and reviewing posts, and a messaging 
+              system.
             </p>
           </div>
           <div style={{ display: pageNumber === 2 ? "block" : "none" }}>
             <img src={require(`./Resources/Pacman.PNG`)} alt="Me" />
             <h2><b>Pacman</b></h2>
-            <p>A popular, often competitively played, Italian card game
-            that consists of 2-4 players. The objective of the game is to score as
-            many points as possible, which is done through winning certain cards
-            that are worth varying amounts of points each. This was a project made
-            during Covid-19 to give my family a way to play one of our favorite card
-            games without having to be in person. <b>CHANGE!</b>
+            <p>This project is based off a UC Berkeley project that is meant to teach 
+              foundational AI concepts, including search algorithms, Markov Decision 
+              Process(MDP), bayes net, and machine learning. The linked repo has Pacman 
+              searching through various sized mazes in an attempt to find the pellet.
             </p>
           </div>
           <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
             <img src={require(`./Resources/Bubble-Trouble.PNG`)} alt="Me" />
             <h2><b>Bubble Trouble</b></h2>
-            <p>A popular, often competitively played, Italian card game
-            that consists of 2-4 players. The objective of the game is to score as
-            many points as possible, which is done through winning certain cards
-            that are worth varying amounts of points each. This was a project made
-            during Covid-19 to give my family a way to play one of our favorite card
-            games without having to be in person. <b>CHANGE!</b>
+            <p>A game made using java's JPanel container class. In this game, balls bounce 
+              all around the screen, and the goal is to pop all of them in order to advance 
+              to the next level without getting hit by them. The project was created for an 
+              open ended assignment and is based off a Flash game with the same name.
             </p>
           </div>
           <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
             <img src={require(`./Resources/Help.PNG`)} alt="Me" />
             <h2><b>Help!</b></h2>
-            <p>A popular, often competitively played, Italian card game
-            that consists of 2-4 players. The objective of the game is to score as
-            many points as possible, which is done through winning certain cards
-            that are worth varying amounts of points each. This was a project made
-            during Covid-19 to give my family a way to play one of our favorite card
-            games without having to be in person. <b>CHANGE!</b>
+            <p>Similar to Zephyr, Help! is a pseudo-website for posting and reviewing information 
+              on local restaurants. The original vision was to make a website that shared the pet 
+              policies of restaurants, so people who had a desire or dependency on taking their dog 
+              to said restaurants would know whether they were allowed to. The idea slowly evolved 
+              into making a simple parody website of the popular website Yelp.
             </p>
           </div>
           <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
             <img src={require(`./Resources/Tank-Game.PNG`)} alt="Me" />
             <h2><b>Tank Game</b></h2>
-            <p>A popular, often competitively played, Italian card game
-            that consists of 2-4 players. The objective of the game is to score as
-            many points as possible, which is done through winning certain cards
-            that are worth varying amounts of points each. This was a project made
-            during Covid-19 to give my family a way to play one of our favorite card
-            games without having to be in person. <b>CHANGE!</b>
+            <p>Another game made using java's JPanel container class. This game pins 2 players against 
+              each other in a classic game of Tank; each player has a set of 3 lives and who ever can 
+              shoot down the other player first wins the game. 
             </p>
           </div>
           <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
@@ -232,38 +228,39 @@ function App() {
           
           </div>
           <div style={{ display: pageNumber === 1 ? "block" : "none" }}>
-            <p><GiStack color="#46b842" />: <b>??????</b></p>
+            <p><GiStack color="#46b842" />: <b>Express, Passport, Sequelize, EJS, JavaScript</b></p>
             <p><b>Position:</b> Frontend </p>
             <p><b>Origin:</b> School Project</p>
-            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Zephyr(CHANGE LINK)</a></p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Zephyr" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Zephyr</a></p>
           </div>
           <div style={{ display: pageNumber === 2 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Python</b></p>
-            <p><b>Position:</b> N/A </p>
+            <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> School Project</p>
-            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Pacman(CHANGE LINK)</a></p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Pacman-Search" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Pacman-Search</a></p>
+            <p><b>More info:</b> <a href="https://inst.eecs.berkeley.edu/~cs188/sp19/projects.html" target="_blank" rel="noopener noreferrer">https://inst.eecs.berkeley.edu/~cs188/sp19/projects.html</a></p>
           </div>
           <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
-            <p><b>Position:</b> N/A </p>
-            <p><b>Origin:</b> Personal</p>
+            <p><b>Position:</b> Individual </p>
+            <p><b>Origin:</b> Personal/School Project</p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Bubble-Trouble" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Bubble-Trouble</a></p>
           </div>
           <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Node.js, React.js, MongoDB, Websocket, Express</b></p>
             <p><b>Position:</b> Frontend </p>
             <p><b>Origin:</b> School Project </p>
-            <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Pacman(CHANGE LINK)</a></p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/CSC667-Final-Project" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/CSC667-Final-Project</a></p>
           </div>
           <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
-            <p><b>Position:</b> N/A </p>
+            <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> School Project </p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Tank-Game" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Tank-Game</a></p>
           </div>
           <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
-            <p><b>Position:</b> N/A </p>
+            <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> Personal </p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Mine-Sweeper" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Mine-Sweeper</a></p>
           </div>
