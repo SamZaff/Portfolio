@@ -23,10 +23,7 @@ function App() {
         <img src={require(`./Resources/SunBanner.gif`)} alt="sun" />
         <p>GIF created using Blender</p>
       </div>
-      <div className="section-jumps">
-        <p id="jump1"></p>
-        <p id="jump2"></p>
-        <p id="jump3"></p>
+      <div className="section-jump" id = "jump1">
       </div>
       <div className="page" id="section1">
         <div id="me">
@@ -49,6 +46,8 @@ function App() {
             <li><GiCardRandom color="Purple" /> <a href="https://briscolacardgame.herokuapp.com/" target="_blank" rel="noopener noreferrer">Briscola Card Game</a></li>
           </ul>
         </div>
+      </div>
+      <div className="section-jump" id = "jump2">
       </div>
       <div className="page" id="section2">
 
@@ -128,7 +127,9 @@ function App() {
           </ul>
           <h4>Work Ethic</h4>
           <p>
-            It is important to work together on a shared goal (COME BACK TO THIS. I can't think of anything right now)
+            It is important to keep equality within the workspace and to work 
+            as a team. Teams who can put their minds together will always be able 
+            to work more creatively and efficiently
           </p>
           <h4>Hobbies</h4>
           <ul style={{ listStyle: "none", marginLeft: "6%", paddingLeft: "0px" }}>
@@ -137,6 +138,8 @@ function App() {
             <li><GiRingedPlanet color="blue" /> Astronomy</li>
           </ul>
         </div>
+      </div>
+      <div className="section-jump" id = "jump3">
       </div>
       <div className="page" id="section3">
         <div id="pager-nav">
@@ -221,7 +224,7 @@ function App() {
           <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Node.js, React.js, MongoDB, Express, Socket.IO</b></p>
             <p><b>Position:</b> FullStack </p>
-            <p><b>Origin:</b> Personal(?)</p>
+            <p><b>Origin:</b> Personal</p>
             <p><b>Link:</b> <a href="https://briscolacardgame.herokuapp.com" target="_blank" rel="noopener noreferrer">https://briscolacardgame.herokuapp.com</a></p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Briscola" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Briscola</a></p>
           

@@ -105,16 +105,16 @@ body, html {
   animation: fadein 1s;
 }
 
-.section-jumps {
-  top: 0%;
-  position: absolute;
+.section-jump {
+  bottom: 12vh;
+  position: relative;
   /* display: none; */
 }
 
-.section-jumps p {
+/* .section-jump p {
   position: relative;
   height: 87vh;
-}
+} */
 
 .page {
   display: block;
