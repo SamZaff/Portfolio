@@ -28,7 +28,7 @@ function App() {
       <div className="page" id="section1">
         <div id="me">
           <img src={require(`./Resources/MeSquared2.JPG`)} alt="Me" />
-          <p>Hi there! My name is <b><u>Sam Zaffanella</u></b> and I recently graguated 
+          <p>Hi there! My name is <b><u>Sam Zaffanella</u></b> and I recently graduated 
              from San Francisco State University with a bachelor of science degree 
              in computer science. I am currently seeking full stack web development 
              opportunities, centralized in the Bay Area or anywhere 
@@ -131,6 +131,12 @@ function App() {
             as a team. Teams who can put their minds together will always be able 
             to work more creatively and efficiently
           </p>
+          {/* <h4>Fun Facts</h4>
+          <ul>
+            <li>Blackbelt in Tae Kwon Do (10+ years)</li>
+            <li>Flown a plane once before </li>
+            <li>I'm connected with the cartel</li>
+          </ul> */}
           <h4>Hobbies</h4>
           <ul style={{ listStyle: "none", marginLeft: "6%", paddingLeft: "0px" }}>
             <li><FaShoePrints color="brown" /> Hiking</li>
