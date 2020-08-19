@@ -31,9 +31,8 @@ function App() {
           <p>Hi there! My name is <b><u>Sam Zaffanella</u></b> and I recently graduated 
              from San Francisco State University with a bachelor of science degree 
              in computer science. I am currently seeking full stack web development 
-             opportunities, centralized in the Bay Area or anywhere 
-             remotely. If you are looking for a great team player and a go getter attitude,  
-             <i>I am your guy.</i>
+             opportunities, centralized in the Bay Area or anywhere remotely. If you are 
+             looking for a great team player with a go getter attitude, <i>I am your guy.</i>
             </p>
         </div>
         <div id="info">
@@ -71,7 +70,7 @@ function App() {
           </ul>
           <h4>Other Skills</h4>
           <ul>
-            <li>Microsoft Office</li>
+            <li>Amazon Web Services (AWS)</li>
             <li>Windows, Mac, LinuxOS</li>
             <li>Blender 3D software</li>
             <li>Wordpress w/ Elementor</li>
