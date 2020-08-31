@@ -238,14 +238,14 @@ body, html {
 #info ul {
   /* font-weight: bold; */
   padding-top: 7%;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: left;
   
   
 }
 
 #info li {
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   padding-left: 2%;
   list-style: none;
 }
