@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
       <div className="sunBanner">
         <div id="nav">
           <a href="#jump1">About</a>
@@ -28,12 +29,21 @@ function App() {
       <div className="page" id="section1">
         <div id="me">
           <img src={require(`./Resources/MeSquared2.JPG`)} alt="Me" />
-          <p>Hi there! My name is <b><u>Sam Zaffanella</u></b> and I recently graduated 
-             from San Francisco State University with a bachelor of science degree 
-             in computer science. I am currently seeking full stack web development 
-             opportunities, centralized in the Bay Area or anywhere remotely. If you are 
-             looking for a great team player with a go getter attitude, <i>I am your guy.</i>
+          <p>Hello there, my name is <b><u>Sam Zaffanella</u></b> and I am a 2020 graduate 
+             of San Francisco State University with a Bachelor of Science degree 
+             in Computer Science. I am currently seeking full stack web development and AI/machine 
+             learning opportunities in the SF Bay Area as well as remotely. I am a team player 
+             looking to work in a dynamic, fast paced environment. 
             </p>
+            {/*<p>Hello, my name is Sam Zaffanella and I am a 2020 graduate of San Francisco 
+            State University with a Bachelor of Science degree in Computer Science. I am 
+            currently seeking employment opportunities in the San Francisco Bay Area that 
+            leverage my skills in full stack web development, Artifical Inteligence, and 
+            data management. I am a team player with a great work ethic looking for a 
+            dynamic, fast paced organization that values cooperative work environments where 
+            I can both contribute immediately and grow my knowledge base.  
+
+            </p> */}
         </div>
         <div id="info">
           <ul>
@@ -124,7 +134,7 @@ function App() {
             <li>Communications</li>
             <li>Growth Mindset</li>
           </ul>
-          <h4>Work Ethic</h4>
+          <h4>Work Style</h4>
           <p>
             It is important to keep equality within the workspace and to work 
             as a team. Teams who can put their minds together will always be able 
