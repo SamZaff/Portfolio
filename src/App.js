@@ -28,7 +28,7 @@ function App() {
       </div>
       <div className="page" id="section1">
         <div id="me">
-          <img src={require(`./Resources/MeSquared2.JPG`)} alt="Me" />
+          <img src={require(`./Resources/MeSquared3.png`)} alt="Me" />
           <p>Hello there, my name is <b><u>Sam Zaffanella</u></b> and I am a 2020 graduate 
              of San Francisco State University with a Bachelor of Science degree 
              in Computer Science. I am currently seeking full stack web development and AI/machine 

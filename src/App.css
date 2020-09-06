@@ -236,7 +236,7 @@ body, html {
 }
 
 #info ul {
-  /* font-weight: bold; */
+  font-weight: bold;
   padding-top: 7%;
   font-size: x-large;
   text-align: left;
