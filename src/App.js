@@ -159,7 +159,7 @@ function App() {
       <div className="page" id="section3">
         <div id="pager-nav">
           <button onClick={() => changePageNumber(pageNumber <= 0 ? 6 : pageNumber - 1)}> &laquo; </button>
-          {pageNumber + 1}/7
+          {pageNumber + 1}/8
         <button onClick={() => { changePageNumber(pageNumber >= 6 ? 0 : pageNumber + 1) }}> &raquo; </button>
         </div>
         <div className="project">
@@ -198,6 +198,16 @@ function App() {
             </p>
           </div>
           <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
+            <img src={require(`./Resources/Restapi.PNG`)} alt="Restapi.PNG" />
+            <h2><b>REST API</b></h2>
+            <p>
+              A project meant to practice Representational state transfer, or RESTful API
+              which uses HTTP requests to get, put, post, and delete data. I will soon be 
+              converting this into an API for one of my old projects
+            </p>
+
+          </div>
+          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
             <img src={require(`./Resources/Bubble-Trouble.PNG`)} alt="Me" />
             <h2><b>Bubble Trouble</b></h2>
             <p>A game made using java's JPanel container class. In this game, balls bounce 
@@ -206,7 +216,7 @@ function App() {
               open ended assignment and is based off a Flash game with the same name.
             </p>
           </div>
-          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
             <img src={require(`./Resources/Help.PNG`)} alt="Me" />
             <h2><b>Help!</b></h2>
             <p>Similar to Zephyr, Help! is a pseudo-website for posting and reviewing information 
@@ -216,7 +226,7 @@ function App() {
               into making a simple parody website of the popular website Yelp.
             </p>
           </div>
-          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
             <img src={require(`./Resources/Tank-Game.PNG`)} alt="Me" />
             <h2><b>Tank Game</b></h2>
             <p>Another game made using java's JPanel container class. This game pins 2 players against 
@@ -224,7 +234,7 @@ function App() {
               shoot down the other player first wins the game. 
             </p>
           </div>
-          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 7 ? "block" : "none" }}>
             <img src={require(`./Resources/Mine-Sweeper.PNG`)} alt="Me" />
             <h2><b>Mine Sweeper</b></h2>
             <p>As the name implies, this is a recreation of the classic game 
@@ -258,24 +268,31 @@ function App() {
             <p><b>More info:</b> <a href="https://inst.eecs.berkeley.edu/~cs188/sp19/projects.html" target="_blank" rel="noopener noreferrer">https://inst.eecs.berkeley.edu/~cs188/sp19/projects.html</a></p>
           </div>
           <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
+            <p><GiStack color="#46b842" />: <b>Go</b></p>
+            <p><b>Position:</b> Individual </p>
+            <p><b>Origin:</b> Personal</p>
+            <p><b>Repo:</b> <a href="https://github.com/SamZaff/RestAPI" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/RestAPI</a></p>
+          
+          </div>
+          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
             <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> Personal/School Project</p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Bubble-Trouble" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Bubble-Trouble</a></p>
           </div>
-          <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Node.js, React.js, MongoDB, Websocket, Express</b></p>
             <p><b>Position:</b> Frontend </p>
             <p><b>Origin:</b> School Project </p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/CSC667-Final-Project" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/CSC667-Final-Project</a></p>
           </div>
-          <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
             <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> School Project </p>
             <p><b>Repo:</b> <a href="https://github.com/SamZaff/Tank-Game" target="_blank" rel="noopener noreferrer">https://github.com/SamZaff/Tank-Game</a></p>
           </div>
-          <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
+          <div style={{ display: pageNumber === 7 ? "block" : "none" }}>
             <p><GiStack color="#46b842" />: <b>Java</b></p>
             <p><b>Position:</b> Individual </p>
             <p><b>Origin:</b> Personal </p>
