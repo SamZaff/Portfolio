@@ -35,15 +35,6 @@ function App() {
              learning opportunities in the SF Bay Area as well as remotely. I am a team player 
              looking to work in a dynamic, fast paced environment. 
             </p>
-            {/*<p>Hello, my name is Sam Zaffanella and I am a 2020 graduate of San Francisco 
-            State University with a Bachelor of Science degree in Computer Science. I am 
-            currently seeking employment opportunities in the San Francisco Bay Area that 
-            leverage my skills in full stack web development, Artifical Inteligence, and 
-            data management. I am a team player with a great work ethic looking for a 
-            dynamic, fast paced organization that values cooperative work environments where 
-            I can both contribute immediately and grow my knowledge base.  
-
-            </p> */}
         </div>
         <div id="info">
           <ul>
@@ -113,16 +104,19 @@ function App() {
         <div id="experience">
           <h2><MdWork color="red" />Experience</h2>
           <br />
+          <img src={require('./Resources/Slice-of-life-icon.png')} id="ncapda" alt="ncapda.png" />
+          <ul>
+            <li><u>September 2020 - Present</u>: Full Stack Developer of Ecommerce website </li>
+            <li>The website uses Stripe Payment processing and is written in JavaScript (Node/React)</li>
+          </ul>
           <img src={require('./Resources/NCAPDA.png')} id="ncapda" alt="ncapda.png" />
           <ul>
             <li><u>January 2020 - Present</u>: Website Support Manager for upcoming <b>Dose of Action</b> event (postponed due to Covid-19)</li>
-            <li>An art event coupled with raising awareness to prescription drug misuse and abuse</li>
           </ul>
-          <br />
+          
           <img src={require('./Resources/CVS.png')} id="CVS" alt="CVS.png" />
           <ul>
             <li><u>May 2017 - August 2017</u>: Retail Sales worker at CVS health</li>
-            <li>Provided adept point of sales work for customers</li>
           </ul>
         </div>
         <div id="experience">
@@ -140,12 +134,6 @@ function App() {
             as a team. Teams who can put their minds together will always be able 
             to work more creatively and efficiently
           </p>
-          {/* <h4>Fun Facts</h4>
-          <ul>
-            <li>Blackbelt in Tae Kwon Do (10+ years)</li>
-            <li>Flown a plane once before </li>
-            <li>I'm connected with the cartel</li>
-          </ul> */}
           <h4>Hobbies</h4>
           <ul style={{ listStyle: "none", marginLeft: "6%", paddingLeft: "0px" }}>
             <li><FaShoePrints color="brown" /> Hiking</li>

@@ -10,8 +10,7 @@ body, html {
   scroll-behavior: smooth;
   margin: 0;
   font-family: "Courier New" !important;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; */
-  /* font-family: Open Sans !; */
+  
 
 
   background-color: #f3d87e !important;
@@ -43,7 +42,6 @@ body, html {
   position: absolute;
   color: grey;
   margin: 3px;
-  /* display: inline-block; */
   right: 0%;
   bottom: 0%;
   font-size: small;
@@ -111,13 +109,7 @@ body, html {
 .section-jump {
   bottom: 12vh;
   position: relative;
-  /* display: none; */
 }
-
-/* .section-jump p {
-  position: relative;
-  height: 87vh;
-} */
 
 .page {
   display: block;
@@ -131,9 +123,7 @@ body, html {
  position: relative;
  width: 25%;
  height: 100%;
- /* height: 86vh; */
  display: inline-block;
- font-size: larg;
  border-right: 2px solid black;
 }
 
@@ -145,6 +135,11 @@ body, html {
   margin-top: 6%;
   margin-left: 3%;
   text-decoration: underline;
+}
+
+#experience:nth-child(3) img{
+  width: 20%;
+  height: auto;
 }
 
 #experience p {
@@ -174,7 +169,6 @@ body, html {
 }
 
 .school-icon img {
-  /* display: inline-block; */
   width: 25%;
   margin-left: 4%;
   float: left;
@@ -362,7 +356,6 @@ body, html {
     bottom: 0;
   }
   .sunBanner a {
-    /* display: none; */
     width: 33.33%;
     font-size: unset;
     margin: auto;
@@ -405,10 +398,6 @@ body, html {
     margin-top: 16%;
   }
 }
-
-
-
-
 
 @keyframes fadein{
   from {opacity: 0%;}
