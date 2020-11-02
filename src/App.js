@@ -111,7 +111,8 @@ function App() {
           </ul>
           <img src={require('./Resources/NCAPDA.png')} id="ncapda" alt="ncapda.png" />
           <ul>
-            <li><u>January 2020 - Present</u>: Website Support Manager for upcoming <b>Dose of Action</b> event (postponed due to Covid-19)</li>
+            <li><u>January 2020 - Present</u>: Website Support Manager for <a href = 'https://ncapda.org/'>https://ncapda.org</a>
+            </li>
           </ul>
           
           <img src={require('./Resources/CVS.png')} id="CVS" alt="CVS.png" />
