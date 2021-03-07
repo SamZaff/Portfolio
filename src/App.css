@@ -317,7 +317,6 @@ body, html {
 
 @media only screen and (max-width: 900px) {
    .page {
-    /* width: 100%; */
     margin-bottom: 15px;
     display: block;
   }
@@ -325,11 +324,9 @@ body, html {
     display: block;
   }
   #section1 {
-    margin-top: 15%;
+    margin-top: 26%;
   }
-  #me{
-    margin-top: 12%;
-  }
+  
   #me, #info {
     font-size: x-large !important;
   }
