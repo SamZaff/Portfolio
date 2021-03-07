@@ -31,9 +31,9 @@ function App() {
           <img src={require(`./Resources/MeSquared3.png`)} alt="Me" />
           <p>Hello there, my name is <b><u>Sam Zaffanella</u></b> and I am a 2020 graduate 
              of San Francisco State University with a Bachelor of Science degree 
-             in Computer Science. I am currently seeking full stack web development and AI/machine 
-             learning opportunities in the SF Bay Area as well as remotely. I am a team player 
-             looking to work in a dynamic, fast paced environment. 
+             in Computer Science. I am currently positioned as a frontend developer at IntelleXt, 
+             though I am always seeking more web development as well as AI/machine learning opportunities. 
+             I am a team player looking to work in a dynamic, fast paced environment. 
             </p>
         </div>
         <div id="info">
@@ -51,7 +51,7 @@ function App() {
       </div>
       <div className="page" id="section2">
 
-        <div id="experience">
+        <div className = "experience" id= "skills">
           <h2><FaLightbulb color="#CCCC00" />Skills</h2>
           <h4>Programming</h4>
           <ul>
@@ -77,7 +77,7 @@ function App() {
             <li>Wordpress w/ Elementor</li>
           </ul>
         </div>
-        <div id="experience">
+        <div className = "experience" id="education">
           <h2><GiBookCover color="purple" />Education</h2>
           <h5>San Francisco <br /> State University</h5>
           <br />
@@ -101,26 +101,27 @@ function App() {
             <li>Software Engineering</li>
           </ul>
         </div>
-        <div id="experience">
+        <div className = "experience" id="xp">
           <h2><MdWork color="red" />Experience</h2>
           <br />
-          <img src={require('./Resources/Slice-of-life-icon.png')} id="ncapda" alt="ncapda.png" />
+          <img src={require('./Resources/Slice-of-life-icon.png')} id="slice-of-life" alt="Slice-of-life-icon.png" />
           <ul>
             <li><u>September 2020 - Present</u>: Full Stack Developer of Ecommerce website </li>
             <li>The website uses Stripe Payment processing and is written in JavaScript (Node/React)</li>
           </ul>
+          <hr/>
           <img src={require('./Resources/NCAPDA.png')} id="ncapda" alt="ncapda.png" />
           <ul>
             <li><u>January 2020 - Present</u>: Website Support Manager for <a href = 'https://ncapda.org/'>https://ncapda.org</a>
             </li>
           </ul>
-          
-          <img src={require('./Resources/CVS.png')} id="CVS" alt="CVS.png" />
+          <hr/>
+          <img src={require('./Resources/intellext-logo.png')} id="IntelleXt" alt="intellext-logo.png" />
           <ul>
-            <li><u>May 2017 - August 2017</u>: Retail Sales worker at CVS health</li>
+            <li><u>February 2021 - Present</u>: Frontend Developer at IntelleXt</li>
           </ul>
         </div>
-        <div id="experience">
+        <div className = "experience" id="traits">
           <h2><GiThink color="blue" />Traits</h2>
           <h4>Soft Skills</h4>
           <ul>
@@ -147,9 +148,9 @@ function App() {
       </div>
       <div className="page" id="section3">
         <div id="pager-nav">
-          <button onClick={() => changePageNumber(pageNumber <= 0 ? 6 : pageNumber - 1)}> &laquo; </button>
+          <button onClick={() => changePageNumber(pageNumber <= 0 ? 7 : pageNumber - 1)}> &laquo; </button>
           {pageNumber + 1}/8
-        <button onClick={() => { changePageNumber(pageNumber >= 6 ? 0 : pageNumber + 1) }}> &raquo; </button>
+        <button onClick={() => { changePageNumber(pageNumber >= 7 ? 0 : pageNumber + 1) }}> &raquo; </button>
         </div>
         <div className="project">
           <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
