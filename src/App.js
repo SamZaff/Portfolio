@@ -59,7 +59,7 @@ function App() {
             <li>React.js</li>
             <li>Python</li>
             <li>HTML</li>
-            <li>CSS</li>
+            <li>CSS/SCSS</li>
             <li>Go</li>
             <li>Java</li>
             <li>C++</li>
