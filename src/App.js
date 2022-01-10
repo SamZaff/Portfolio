@@ -4,7 +4,7 @@ import { FaGithub, FaPhoneAlt, FaLightbulb, FaShoePrints } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMail, GoDeviceDesktop } from 'react-icons/go'
 import { IoIosPaper } from 'react-icons/io'
-import { GiCardRandom, GiBookCover, GiThink, GiRingedPlanet, GiStack } from 'react-icons/gi'
+import { GiBookCover, GiThink, GiRingedPlanet, GiStack } from 'react-icons/gi'
 import { MdWork } from 'react-icons/md'
 import resume from './Resources/Resume\ Revised.pdf'
 
