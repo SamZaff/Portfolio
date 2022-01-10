@@ -31,7 +31,7 @@ function App() {
           <img src={require(`./Resources/MeSquared3.png`)} alt="Me" />
           <p>Hello there, my name is <b><u>Sam Zaffanella</u></b> and I am a 2020 graduate 
              of San Francisco State University with a Bachelor of Science degree 
-             in Computer Science. I am currently positioned as a frontend developer at IntelleXt, 
+             in Computer Science. I am currently positioned as a Software Engineer at Edduus, 
              though I am always seeking more web development as well as AI/machine learning opportunities. 
              I am a team player looking to work in a dynamic, fast paced environment. 
             </p>
@@ -43,7 +43,7 @@ function App() {
             <li><FaPhoneAlt color="#32CD32" /> (+1)925-451-0918</li>
             <li><GoMail color="red" /> <a href="mailto:samuel.zaffanella@gmail.com">samuel.zaffanella@gmail.com</a></li>
             <li><IoIosPaper color="grey" /> <a href={resume} target="_blank" rel="noopener noreferrer">Resume.pdf</a></li>
-            <li><GiCardRandom color="Purple" /> <a href="https://briscolacardgame.herokuapp.com/" target="_blank" rel="noopener noreferrer">Briscola Card Game</a></li>
+            {/* <li><GiCardRandom color="Purple" /> <a href="https://briscolacardgame.herokuapp.com/" target="_blank" rel="noopener noreferrer">Briscola Card Game</a></li> */}
           </ul>
         </div>
       </div>
@@ -74,7 +74,8 @@ function App() {
             <li>Amazon Web Services (AWS)</li>
             <li>Windows, Mac, LinuxOS</li>
             <li>Blender 3D software</li>
-            <li>Wordpress w/ Elementor</li>
+            <li>Wordpress w/ Elementor &amp;  Divi</li>
+            <li>Figma</li>
           </ul>
         </div>
         <div className = "experience" id="education">
@@ -104,21 +105,22 @@ function App() {
         <div className = "experience" id="xp">
           <h2><MdWork color="red" />Experience</h2>
           <br />
-          <img src={require('./Resources/Slice-of-life-icon.png')} id="slice-of-life" alt="Slice-of-life-icon.png" />
+          <img src={require('./Resources/edduus logo.jpeg')} id="slice-of-life" alt="Slice-of-life-icon.png" />
           <ul>
-            <li><u>September 2020 - Present</u>: Full Stack Developer of Ecommerce website </li>
-            <li>The website uses Stripe Payment processing and is written in JavaScript (Node/React)</li>
+            <li><u>September 2021 - Present</u>: Software Engineer of for <a href = 'https://edduus.io/'>Edduus</a></li>
+            <li>Build responsive and elegant web applications with multi-language support</li>
+            <li>Work across all levels of the stack and solve complex problems using elegant and scalable solutions</li>
           </ul>
           <hr/>
           <img src={require('./Resources/NCAPDA.png')} id="ncapda" alt="ncapda.png" />
           <ul>
-            <li><u>January 2020 - Present</u>: Website Support Manager for <a href = 'https://ncapda.org/'>https://ncapda.org</a>
+            <li><u>January 2020 - December 2020</u>: Website Support Manager for <a href = 'https://ncapda.org/'>https://ncapda.org</a>
             </li>
           </ul>
           <hr/>
           <img src={require('./Resources/intellext-logo.png')} id="IntelleXt" alt="intellext-logo.png" />
           <ul>
-            <li><u>February 2021 - Present</u>: Frontend Developer at IntelleXt</li>
+            <li><u>February 2021 - August 2021</u>: Frontend Developer at <a href = 'https://intellext.ai/'>IntelleXt</a></li>
           </ul>
         </div>
         <div className = "experience" id="traits">
