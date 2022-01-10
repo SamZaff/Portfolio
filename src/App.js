@@ -6,7 +6,7 @@ import { GoMail, GoDeviceDesktop } from 'react-icons/go'
 import { IoIosPaper } from 'react-icons/io'
 import { GiBookCover, GiThink, GiRingedPlanet, GiStack } from 'react-icons/gi'
 import { MdWork } from 'react-icons/md'
-import resume from './Resources/Resume\ Revised.pdf'
+import resume from './Resources/Resume Revised.pdf'
 
 function App() {
   const [pageNumber, changePageNumber] = React.useState(0);
