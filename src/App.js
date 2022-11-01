@@ -31,7 +31,7 @@ function App() {
           <img src={require(`./Resources/MeSquared3.png`)} alt="Me" />
           <p>Hello there, my name is <b><u>Sam Zaffanella</u></b> and I am a 2020 graduate 
              of San Francisco State University with a Bachelor of Science degree 
-             in Computer Science. I am currently positioned as a Software Engineer at Edduus, 
+             in Computer Science. I am currently positioned as a Fullstack Software Engineer at Edduus, 
              though I am always seeking more web development as well as AI/machine learning opportunities. 
              I am a team player looking to work in a dynamic, fast paced environment. 
             </p>
