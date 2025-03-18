@@ -37,7 +37,7 @@ function App() {
         <div id="me">
           <img src={require(`./Resources/MeSquared3.png`)} alt="Me" />
           <p>
-            Hello there, my name is{" "}
+            Hey there, my name is{" "}
             <b>
               <u>Sam Zaffanella</u>
             </b>{" "}
