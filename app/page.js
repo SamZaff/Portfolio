@@ -32,13 +32,13 @@ export default function Home() {
           <a href="#jump2">Experience</a>
           <a href="#jump3">Projects</a>
         </div>
-        <img src={`Resources/SunBanner.gif`} alt="sun" />
+        <img src={"Resources/SunBanner.gif"} alt="sun" />
         <p>GIF created using Blender</p>
       </div>
       <div className="section-jump" id="jump1"></div>
       <div className="page" id="section1">
         <div id="me">
-          <img src={`Resources/MeSquared3.png`} alt="Me" />
+          <img src={"Resources/MeSquared3.png"} alt="Me" />
           <p>
             Hey there, my name is{" "}
             <b>
@@ -261,7 +261,7 @@ export default function Home() {
         </div>
         <div className="project">
           <div style={{ display: pageNumber === 0 ? "block" : "none" }}>
-            <img src={`Resources/Briscola.PNG`} alt="Briscola.PNG" />
+            <img src={"Resources/Briscola.PNG"} alt="Briscola.PNG" />
             <h2>
               <b>Briscola</b>
             </h2>
@@ -276,7 +276,7 @@ export default function Home() {
           </div>
 
           <div style={{ display: pageNumber === 1 ? "block" : "none" }}>
-            <img src={`Resources/Zephyr.PNG`} alt="Zephyr.PNG" />
+            <img src={"Resources/Zephyr.PNG"} alt="Zephyr.PNG" />
             <h2>
               <b>Zephyr</b>
             </h2>
@@ -291,7 +291,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 2 ? "block" : "none" }}>
-            <img src={`Resources/Pacman.PNG`} alt="Me" />
+            <img src={"Resources/Pacman.PNG"} alt="Me" />
             <h2>
               <b>Pacman</b>
             </h2>
@@ -304,7 +304,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 3 ? "block" : "none" }}>
-            <img src={`Resources/Restapi.PNG`} alt="Restapi.PNG" />
+            <img src={"Resources/Restapi.PNG"} alt="Restapi.PNG" />
             <h2>
               <b>REST API</b>
             </h2>
@@ -316,7 +316,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 4 ? "block" : "none" }}>
-            <img src={`Resources/Bubble-Trouble.PNG`} alt="Me" />
+            <img src={"Resources/Bubble-Trouble.PNG"} alt="Me" />
             <h2>
               <b>Bubble Trouble</b>
             </h2>
@@ -329,7 +329,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 5 ? "block" : "none" }}>
-            <img src={`Resources/Help.PNG`} alt="Me" />
+            <img src={"Resources/Help.PNG"} alt="Me" />
             <h2>
               <b>Help!</b>
             </h2>
@@ -344,7 +344,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 6 ? "block" : "none" }}>
-            <img src={`Resources/Tank-Game.PNG`} alt="Me" />
+            <img src={"Resources/Tank-Game.PNG"} alt="Me" />
             <h2>
               <b>Tank Game</b>
             </h2>
@@ -356,7 +356,7 @@ export default function Home() {
             </p>
           </div>
           <div style={{ display: pageNumber === 7 ? "block" : "none" }}>
-            <img src={`Resources/Mine-Sweeper.PNG`} alt="Me" />
+            <img src={"Resources/Mine-Sweeper.PNG"} alt="Me" />
             <h2>
               <b>Mine Sweeper</b>
             </h2>
